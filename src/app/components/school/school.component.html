@@ -1,0 +1,18 @@
+<div class="box">
+    <h2>Cursus scolaire</h2>
+    <ul class="timeline clearfix">
+        <li *ngFor="let item of items$ | async">
+            <div class="year">{{item.year}}</div>
+            <div class="description">
+                <h4>{{item.title}}</h4>
+                <p>
+                    <mat-icon [inline]="true">place</mat-icon>
+                    {{item.location}}
+                    <a [href]="item.href" *ngIf="item.href" target="_blank">
+                        <mat-icon [inline]="true">link</mat-icon>
+                    </a>
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>

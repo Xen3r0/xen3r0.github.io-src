@@ -1,0 +1,9 @@
+<div class="box">
+    <h2>Loisirs</h2>
+    <mat-chip-list [selectable]="false">
+        <mat-chip *ngFor="let hobby of items$ | async">
+            <mat-icon>{{hobby.icon}}</mat-icon>
+            {{hobby.title}}
+        </mat-chip>
+    </mat-chip-list>
+</div>

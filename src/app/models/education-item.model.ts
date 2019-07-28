@@ -1,4 +1,4 @@
-export interface SchoolItemModel {
+export interface EducationItemModel {
     year: number;
     title: string;
     location: string;

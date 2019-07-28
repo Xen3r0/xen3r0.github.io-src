@@ -1,6 +1,6 @@
 // Dependencies
 import {Observable} from 'rxjs';
-import {SchoolItemModel} from '../models/school-item.model';
+import {EducationItemModel} from '../models/education-item.model';
 
 export interface DataInterface {
     getAll(): Observable<any>;

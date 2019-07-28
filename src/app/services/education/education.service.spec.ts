@@ -2,35 +2,35 @@
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 import {TestBed} from '@angular/core/testing';
 // Services
-import {SchoolService} from './school.service';
+import {EducationService} from './education.service';
 // Testing
-import {getSchoolMockData} from '../../../../testing/school.testing';
+import {getEducationMockData} from '../../../../testing/education.testing';
 
 describe('Services', () => {
-    describe('SchoolService', () => {
+    describe('EducationService', () => {
         beforeEach(() => {
             TestBed.configureTestingModule({
                 imports: [HttpClientTestingModule],
-                providers: [SchoolService]
+                providers: [EducationService]
             });
         });
 
         it('should be created', () => {
-            const service: SchoolService = TestBed.get(SchoolService);
+            const service: EducationService = TestBed.get(EducationService);
             expect(service).toBeTruthy();
         });
 
         it('should be get all items', () => {
-            const service: SchoolService = TestBed.get(SchoolService);
+            const service: EducationService = TestBed.get(EducationService);
             const httpTestingController: HttpTestingController = TestBed.get(HttpTestingController);
             const request = service.getAll();
-            const testData = getSchoolMockData();
+            const testData = getEducationMockData();
 
             request.subscribe((data) => {
                 expect(data).toEqual(testData);
             });
 
-            const req = httpTestingController.expectOne('assets/data/school.json');
+            const req = httpTestingController.expectOne('assets/data/education.json');
             expect(req.request.method).toEqual('GET');
 
             req.flush(testData);

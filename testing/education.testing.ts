@@ -1,7 +1,7 @@
 // Models
-import {SchoolItemModel} from '../src/app/models/school-item.model';
+import {EducationItemModel} from '../src/app/models/education-item.model';
 
-export function getSchoolMockData(): Array<SchoolItemModel> {
+export function getEducationMockData(): Array<EducationItemModel> {
     return [
         {
             title: 'test 1',

@@ -5,9 +5,9 @@ import {NgModule} from '@angular/core';
 // Dependencies
 import {MatIconModule} from '@angular/material';
 // Components
-import {SchoolComponent} from './components/school/school.component';
+import {EducationComponent} from './components/education/education.component';
 // Services
-import {SchoolService} from './services/school/school.service';
+import {EducationService} from './services/education/education.service';
 
 @NgModule({
     imports: [
@@ -19,15 +19,15 @@ import {SchoolService} from './services/school/school.service';
     ],
     declarations: [
         // Components
-        SchoolComponent,
+        EducationComponent,
     ],
     exports: [
         // Components
-        SchoolComponent,
+        EducationComponent,
     ],
     providers: [
-        SchoolService,
+        EducationService,
     ]
 })
-export class SchoolModule {
+export class EducationModule {
 }

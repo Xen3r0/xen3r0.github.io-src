@@ -8,7 +8,7 @@ import {AboutModule} from './about.module';
 import {ContactModule} from './contact.module';
 import {HeaderModule} from './header.module';
 import {HobbiesModule} from './hobbies.module';
-import {SchoolModule} from './school.module';
+import {EducationModule} from './education.module';
 import {SkillsModule} from './skills.module';
 
 @NgModule({
@@ -21,7 +21,7 @@ import {SkillsModule} from './skills.module';
         ContactModule,
         HeaderModule,
         HobbiesModule,
-        SchoolModule,
+        EducationModule,
         SkillsModule,
     ],
     declarations: [

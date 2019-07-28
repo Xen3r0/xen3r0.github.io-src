@@ -5,21 +5,21 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 // Models
-import {SchoolItemModel} from '../../models/school-item.model';
+import {EducationItemModel} from '../../models/education-item.model';
 // Services
 import {DataInterface} from '../data.interface';
 
 @Injectable()
-export class SchoolService implements DataInterface {
+export class EducationService implements DataInterface {
     constructor(private httpClient: HttpClient) {
     }
 
     /**
-     * Get all school items
+     * Get all education items
      */
-    getAll(): Observable<Array<SchoolItemModel>> {
-        return this.httpClient.get<Array<SchoolItemModel>>('assets/data/school.json').pipe(
-            map((items: Array<SchoolItemModel>) => {
+    getAll(): Observable<Array<EducationItemModel>> {
+        return this.httpClient.get<Array<EducationItemModel>>('assets/data/education.json').pipe(
+            map((items: Array<EducationItemModel>) => {
                 items.sort(this.orderItems);
 
                 return items;
@@ -27,7 +27,7 @@ export class SchoolService implements DataInterface {
         );
     }
 
-    private orderItems(a: SchoolItemModel, b: SchoolItemModel): number {
+    private orderItems(a: EducationItemModel, b: EducationItemModel): number {
         if (a.year > b.year) {
             return -1;
         }

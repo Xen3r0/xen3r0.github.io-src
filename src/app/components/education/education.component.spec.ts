@@ -4,44 +4,45 @@ import {NO_ERRORS_SCHEMA} from '@angular/core';
 // Dependencies
 import {of} from 'rxjs';
 // Components
-import {SchoolComponent} from './school.component';
+import {EducationComponent} from './education.component';
 // Models
-import {SchoolItemModel} from '../../models/school-item.model';
+import {EducationItemModel} from '../../models/education-item.model';
 // Services
-import {SchoolService} from '../../services/school/school.service';
-import {getSchoolMockData} from '../../../../testing/school.testing';
+import {EducationService} from '../../services/education/education.service';
+// Testing
+import {getEducationMockData} from '../../../../testing/education.testing';
 
 describe('Components', () => {
-    describe('SchoolComponent', () => {
-        let component: SchoolComponent;
-        let fixture: ComponentFixture<SchoolComponent>;
+    describe('EducationComponent', () => {
+        let component: EducationComponent;
+        let fixture: ComponentFixture<EducationComponent>;
 
-        let schoolServiceStub: SchoolService;
+        let educationServiceStub: EducationService;
 
-        let mockData: Array<SchoolItemModel>;
+        let mockData: Array<EducationItemModel>;
 
         beforeEach(() => {
-            mockData = getSchoolMockData();
+            mockData = getEducationMockData();
         });
 
         beforeEach(() => {
-            schoolServiceStub = {
+            educationServiceStub = {
                 getAll: jasmine.createSpy('getAll').and.returnValue(of(mockData))
             } as any;
         });
 
         beforeEach(async(() => {
             TestBed.configureTestingModule({
-                declarations: [SchoolComponent],
+                declarations: [EducationComponent],
                 providers: [
-                    {provide: SchoolService, useValue: schoolServiceStub},
+                    {provide: EducationService, useValue: educationServiceStub},
                 ],
                 schemas: [NO_ERRORS_SCHEMA]
             }).compileComponents();
         }));
 
         beforeEach(() => {
-            fixture = TestBed.createComponent(SchoolComponent);
+            fixture = TestBed.createComponent(EducationComponent);
             component = fixture.componentInstance;
             fixture.detectChanges();
         });

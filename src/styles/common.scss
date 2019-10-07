@@ -22,6 +22,12 @@ body {
   }
 }
 
+@media print {
+    .container {
+        
+    }
+}
+
 .label {
   border-radius: 1px;
   padding: .3em .6em;

@@ -78,3 +78,9 @@
   margin-top: 5px;
   padding: 0;
 }
+
+@media print {
+    .timeline li .description p {
+        margin-bottom: 5px;
+    }
+}

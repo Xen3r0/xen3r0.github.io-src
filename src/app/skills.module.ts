@@ -3,7 +3,10 @@ import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 // Dependencies
-import {MatIconModule, MatListModule, MatProgressBarModule, MatProgressSpinnerModule} from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 // Components
 import {SkillsComponent} from './components/skills/skills.component';
 // Services

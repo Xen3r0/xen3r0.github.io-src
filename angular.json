@@ -116,14 +116,6 @@
               "devServerTarget": "xen3r0:serve:production"
             }
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy",
-          "options": {
-            "baseHref": "https://xen3r0.github.io/",
-            "name": "Manuel Santisteban",
-            "email": "xen3r0@gmail.com"
-          }
         }
       }
     }

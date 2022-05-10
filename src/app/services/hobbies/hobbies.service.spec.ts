@@ -16,13 +16,13 @@ describe('Services', () => {
         });
 
         it('should be created', () => {
-            const service: HobbiesService = TestBed.get(HobbiesService);
+            const service: HobbiesService = TestBed.inject(HobbiesService);
             expect(service).toBeTruthy();
         });
 
         it('should be get all items', () => {
-            const service: HobbiesService = TestBed.get(HobbiesService);
-            const httpTestingController: HttpTestingController = TestBed.get(HttpTestingController);
+            const service: HobbiesService = TestBed.inject(HobbiesService);
+            const httpTestingController: HttpTestingController = TestBed.inject(HttpTestingController);
             const request = service.getAll();
             const testData = getHobbiesMockData();
 

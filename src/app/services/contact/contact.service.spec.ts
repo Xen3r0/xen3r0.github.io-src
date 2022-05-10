@@ -16,13 +16,13 @@ describe('Services', () => {
         });
 
         it('should be created', () => {
-            const service: ContactService = TestBed.get(ContactService);
+            const service: ContactService = TestBed.inject(ContactService);
             expect(service).toBeTruthy();
         });
 
         it('should be get all items', () => {
-            const service: ContactService = TestBed.get(ContactService);
-            const httpTestingController: HttpTestingController = TestBed.get(HttpTestingController);
+            const service: ContactService = TestBed.inject(ContactService);
+            const httpTestingController: HttpTestingController = TestBed.inject(HttpTestingController);
             const request = service.getAll();
             const testData = getContactMockData();
 

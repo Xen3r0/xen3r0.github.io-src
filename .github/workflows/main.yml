@@ -1,23 +1,23 @@
-name: Deploy to GitHub Pages via angular-cli-ghpages
-
-on: [push]
-
+name: Build and Deploy
+on:
+    push:
+        branches:
+            - master
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+      concurrency: ci-${{ github.ref }}
+      runs-on: ubuntu-latest
+      steps:
+          -   name: Checkout 🛎️
+              uses: actions/checkout@v3
 
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+          -   name: Install and Build 🔧
+              run: |
+                  npm ci
+                  npm run build
 
-    - name: Use Node.js 12.x
-      uses: actions/setup-node@v1
-      with:
-        node-version: 12.x
-
-    - name: Prepare and deploy
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        npm install
-        npm run ng -- deploy --base-href=/xen3r0.github.io/ --name="Manuel Santisteban" --email="xen3r0@gmail.com" --no-silent
+          -   name: Deploy 🚀
+              uses: JamesIves/github-pages-deploy-action@v4.3.3
+              with:
+                  branch: gh-pages
+                  folder: dist

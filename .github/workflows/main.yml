@@ -4,20 +4,21 @@ on:
         branches:
             - master
 jobs:
-  build-and-deploy:
-      concurrency: ci-${{ github.ref }}
-      runs-on: ubuntu-latest
-      steps:
-          -   name: Checkout 🛎️
-              uses: actions/checkout@v3
+    build-and-deploy:
+        runs-on: ubuntu-latest
 
-          -   name: Install and Build 🔧
-              run: |
-                  npm install
-                  npm run build
+        steps:
+            -   name: Checkout
+                uses: actions/checkout@v2
 
-          -   name: Deploy 🚀
-              uses: peaceiris/actions-gh-pages@v3
-              with:
-                  github_token: ${{ secrets.GITHUB_TOKEN }}
-                  publish_dir: ./dist
+            -   name: Use Node.js 12.x
+                uses: actions/setup-node@v1
+                with:
+                    node-version: 12.x
+
+            -   name: Prepare and deploy
+                env:
+                    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                run: |
+                    npm install
+                    npm run ng -- deploy

@@ -1,23 +1,20 @@
-// Angular
-import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-// Components
-import {AppComponent} from './components/app/app.component';
-// Modules
+import {BrowserModule} from '@angular/platform-browser';
+
 import {AboutModule} from './about.module';
+
+import {AppComponent} from './components/app/app.component';
 import {ContactModule} from './contact.module';
+import {EducationModule} from './education.module';
 import {HeaderModule} from './header.module';
 import {HobbiesModule} from './hobbies.module';
-import {EducationModule} from './education.module';
 import {SkillsModule} from './skills.module';
 import {WorkExperienceModule} from './work-experience.module';
 
 @NgModule({
     imports: [
-        // Angular
         BrowserModule,
 
-        // App
         AboutModule,
         ContactModule,
         HeaderModule,

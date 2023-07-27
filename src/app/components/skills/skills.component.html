@@ -2,8 +2,8 @@
     <h2>Compétences</h2>
     <mat-list class="d-print-none">
         <mat-list-item *ngFor="let item of items$ | async">
-            <h4 mat-line>{{item.title}}</h4>
-            <p mat-line>
+            <h4 matListItemTitle>{{item.title}}</h4>
+            <p matListItemLine>
                 <mat-progress-bar mode="determinate" [value]="item.percent"></mat-progress-bar>
             </p>
         </mat-list-item>

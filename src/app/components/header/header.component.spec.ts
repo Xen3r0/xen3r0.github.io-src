@@ -1,31 +1,22 @@
-// Angular
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
-// Components
-import {HeaderComponent} from './header.component';
-// Pipes
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+
 import {AgePipe} from '../../pipes/age/age.pipe';
+
+import {HeaderComponent} from './header.component';
 
 describe('Components', () => {
     describe('HeaderComponent', () => {
         let component: HeaderComponent;
         let fixture: ComponentFixture<HeaderComponent>;
 
-        beforeEach(async(() => {
-            TestBed.configureTestingModule({
+        beforeEach(async () => {
+            await TestBed.configureTestingModule({
                 declarations: [HeaderComponent, AgePipe]
             }).compileComponents();
-        }));
 
-        beforeEach(() => {
             fixture = TestBed.createComponent(HeaderComponent);
             component = fixture.componentInstance;
             fixture.detectChanges();
-        });
-
-        afterEach(() => {
-            if (fixture) {
-                fixture.destroy();
-            }
         });
 
         it('should create', () => {

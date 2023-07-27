@@ -1,10 +1,9 @@
-// Angular
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-// Dependencies
+
 import {Observable} from 'rxjs';
-// Models
+
 import {HobbyItemModel} from '../../models/hobby-item.model';
-// Services
+
 import {HobbiesService} from '../../services/hobbies/hobbies.service';
 
 @Component({

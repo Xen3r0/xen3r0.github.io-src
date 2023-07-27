@@ -1,4 +1,3 @@
-// Angular
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 // Dependencies
 import {Observable} from 'rxjs';

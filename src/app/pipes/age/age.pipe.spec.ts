@@ -1,4 +1,3 @@
-// Pipes
 import {AgePipe} from './age.pipe';
 
 describe('Pipes', () => {

@@ -1,16 +1,15 @@
-// Angular
-import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 import {NO_ERRORS_SCHEMA} from '@angular/core';
-// Dependencies
+import {ComponentFixture, TestBed} from '@angular/core/testing';
+
 import {of} from 'rxjs';
-// Components
-import {HobbiesComponent} from './hobbies.component';
-// Models
-import {HobbyItemModel} from '../../models/hobby-item.model';
-// Services
-import {HobbiesService} from '../../services/hobbies/hobbies.service';
-// Testing
+
 import {getHobbiesMockData} from '../../../../testing/hobbies.testing';
+
+import {HobbyItemModel} from '../../models/hobby-item.model';
+
+import {HobbiesService} from '../../services/hobbies/hobbies.service';
+
+import {HobbiesComponent} from './hobbies.component';
 
 describe('Components', () => {
     describe('HobbiesComponent', () => {
@@ -31,26 +30,18 @@ describe('Components', () => {
             } as any;
         });
 
-        beforeEach(async(() => {
-            TestBed.configureTestingModule({
+        beforeEach(async () => {
+            await TestBed.configureTestingModule({
                 declarations: [HobbiesComponent],
                 providers: [
                     {provide: HobbiesService, useValue: hobbiesServiceStub},
                 ],
                 schemas: [NO_ERRORS_SCHEMA]
             }).compileComponents();
-        }));
 
-        beforeEach(() => {
             fixture = TestBed.createComponent(HobbiesComponent);
             component = fixture.componentInstance;
             fixture.detectChanges();
-        });
-
-        afterEach(() => {
-            if (fixture) {
-                fixture.destroy();
-            }
         });
 
         it('should create', () => {

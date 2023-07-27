@@ -1,10 +1,9 @@
-// Angular
-import {TestBed} from '@angular/core/testing';
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
-// Services
-import {HobbiesService} from './hobbies.service';
-// Testing
+import {TestBed} from '@angular/core/testing';
+
 import {getHobbiesMockData} from '../../../../testing/hobbies.testing';
+
+import {HobbiesService} from './hobbies.service';
 
 describe('Services', () => {
     describe('HobbiesService', () => {

@@ -1,12 +1,11 @@
-// Angular
-import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-// Dependencies
+import {Injectable} from '@angular/core';
+
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
-// Models
+
 import {EducationItemModel} from '../../models/education-item.model';
-// Services
+
 import {DataInterface} from '../data.interface';
 
 @Injectable()
@@ -14,9 +13,6 @@ export class EducationService implements DataInterface {
     constructor(private httpClient: HttpClient) {
     }
 
-    /**
-     * Get all education items
-     */
     getAll(): Observable<Array<EducationItemModel>> {
         return this.httpClient.get<Array<EducationItemModel>>('assets/data/education.json').pipe(
             map((items: Array<EducationItemModel>) => {

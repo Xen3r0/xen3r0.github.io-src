@@ -1,4 +1,3 @@
-// Angular
 import {Component, OnInit} from '@angular/core';
 // Dependencies
 import {Observable} from 'rxjs';

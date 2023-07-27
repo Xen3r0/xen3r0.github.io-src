@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 import {HttpClientModule} from '@angular/common/http';
 // Dependencies
 import {MatIconModule} from '@angular/material/icon';
-import {MatListModule} from '@angular/material/list';
+import {MatLegacyListModule as MatListModule} from '@angular/material/legacy-list';
 // Components
 import {ContactComponent} from './components/contact/contact.component';
 // Services

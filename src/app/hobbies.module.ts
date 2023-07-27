@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 // Dependencies
-import {MatChipsModule} from '@angular/material/chips';
+import {MatLegacyChipsModule as MatChipsModule} from '@angular/material/legacy-chips';
 import {MatIconModule} from '@angular/material/icon';
 // Components
 import {HobbiesComponent} from './components/hobbies/hobbies.component';

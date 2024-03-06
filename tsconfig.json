@@ -10,6 +10,14 @@
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "importHelpers": true,
+      "paths": {
+        "@app/*": [
+          "src/app/*"
+        ],
+        "@app-testing/*": [
+          "testing/*"
+        ]
+      },
       "target": "ES2022",
       "typeRoots": [
         "node_modules/@types"

@@ -1,10 +1,10 @@
 import {Component, OnInit} from '@angular/core';
-// Dependencies
+
 import {Observable} from 'rxjs';
-// Models
-import {SkillItemModel} from '../../models/skill-item.model';
-// Services
-import {SkillsService} from '../../services/skills/skills.service';
+
+import {SkillItemModel} from '@app/models/skill-item.model';
+
+import {SkillsService} from '@app/services/skills/skills.service';
 
 @Component({
     selector: 'app-skills',

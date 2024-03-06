@@ -61,18 +61,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "xen3r0:build"
+            "buildTarget": "xen3r0:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "xen3r0:build:production"
+              "buildTarget": "xen3r0:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "xen3r0:build"
+            "buildTarget": "xen3r0:build"
           }
         },
         "test": {

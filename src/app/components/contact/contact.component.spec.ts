@@ -3,13 +3,13 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {of} from 'rxjs';
 
-import {getContactMockData} from '../../../../testing/contact.testing';
+import {ContactComponent} from '@app/components/contact/contact.component';
 
-import {ContactItemModel} from '../../models/contact-item.model';
+import {ContactItemModel} from '@app/models/contact-item.model';
 
-import {ContactService} from '../../services/contact/contact.service';
+import {ContactService} from '@app/services/contact/contact.service';
 
-import {ContactComponent} from './contact.component';
+import {getContactMockData} from '@app-testing/contact.testing';
 
 describe('Components', () => {
     describe('ContactComponent', () => {

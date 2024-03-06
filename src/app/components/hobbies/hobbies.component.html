@@ -1,9 +1,11 @@
 <div class="box">
     <h2>Loisirs</h2>
     <mat-chip-listbox [selectable]="false">
-        <mat-chip *ngFor="let hobby of items$ | async">
-            <mat-icon matChipAvatar>{{hobby.icon}}</mat-icon>
-            {{hobby.title}}
-        </mat-chip>
+        @for (hobby of items$ | async; track hobby) {
+            <mat-chip-option>
+                <mat-icon matChipAvatar>{{ hobby.icon }}</mat-icon>
+                {{ hobby.title }}
+            </mat-chip-option>
+        }
     </mat-chip-listbox>
 </div>

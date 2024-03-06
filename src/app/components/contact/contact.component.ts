@@ -1,12 +1,12 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-// Dependencies
-import {MatIconRegistry} from '@angular/material/icon';
 import {DomSanitizer} from '@angular/platform-browser';
+
+import {MatIconRegistry} from '@angular/material/icon';
 import {Observable} from 'rxjs';
-// Models
-import {ContactItemModel} from '../../models/contact-item.model';
-// Services
-import {ContactService} from '../../services/contact/contact.service';
+
+import {ContactItemModel} from '@app/models/contact-item.model';
+
+import {ContactService} from '@app/services/contact/contact.service';
 
 @Component({
     selector: 'app-contact',

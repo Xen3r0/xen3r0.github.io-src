@@ -4,9 +4,9 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 
-import {SkillItemModel} from '../../models/skill-item.model';
+import {SkillItemModel} from '@app/models/skill-item.model';
 
-import {DataInterface} from '../data.interface';
+import {DataInterface} from '@app/services/data.interface';
 
 @Injectable()
 export class SkillsService implements DataInterface {

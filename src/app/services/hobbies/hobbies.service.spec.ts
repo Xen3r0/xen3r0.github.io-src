@@ -1,9 +1,9 @@
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 import {TestBed} from '@angular/core/testing';
 
-import {getHobbiesMockData} from '../../../../testing/hobbies.testing';
+import {HobbiesService} from '@app/services/hobbies/hobbies.service';
 
-import {HobbiesService} from './hobbies.service';
+import {getHobbiesMockData} from '@app-testing/hobbies.testing';
 
 describe('Services', () => {
     describe('HobbiesService', () => {

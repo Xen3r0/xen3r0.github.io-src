@@ -3,13 +3,13 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {of} from 'rxjs';
 
-import {getHobbiesMockData} from '../../../../testing/hobbies.testing';
+import {HobbiesComponent} from '@app/components/hobbies/hobbies.component';
 
-import {HobbyItemModel} from '../../models/hobby-item.model';
+import {HobbyItemModel} from '@app/models/hobby-item.model';
 
-import {HobbiesService} from '../../services/hobbies/hobbies.service';
+import {HobbiesService} from '@app/services/hobbies/hobbies.service';
 
-import {HobbiesComponent} from './hobbies.component';
+import {getHobbiesMockData} from '@app-testing/hobbies.testing';
 
 describe('Components', () => {
     describe('HobbiesComponent', () => {

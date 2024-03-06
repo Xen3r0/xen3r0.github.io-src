@@ -3,13 +3,13 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {of} from 'rxjs';
 
-import {getSkillsMockData} from '../../../../testing/skills.testing';
+import {SkillsComponent} from '@app/components/skills/skills.component';
 
-import {SkillItemModel} from '../../models/skill-item.model';
+import {SkillItemModel} from '@app/models/skill-item.model';
 
-import {SkillsService} from '../../services/skills/skills.service';
+import {SkillsService} from '@app/services/skills/skills.service';
 
-import {SkillsComponent} from './skills.component';
+import {getSkillsMockData} from '@app-testing/skills.testing';
 
 describe('Components', () => {
     describe('SkillsComponent', () => {

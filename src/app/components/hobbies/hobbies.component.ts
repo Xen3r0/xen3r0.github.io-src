@@ -2,9 +2,9 @@ import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 import {Observable} from 'rxjs';
 
-import {HobbyItemModel} from '../../models/hobby-item.model';
+import {HobbyItemModel} from '@app/models/hobby-item.model';
 
-import {HobbiesService} from '../../services/hobbies/hobbies.service';
+import {HobbiesService} from '@app/services/hobbies/hobbies.service';
 
 @Component({
     selector: 'app-hobbies',

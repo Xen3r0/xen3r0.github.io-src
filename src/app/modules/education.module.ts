@@ -3,11 +3,10 @@ import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 
 import {MatIconModule} from '@angular/material/icon';
-import {MatListModule} from '@angular/material/list';
 
-import {ContactComponent} from './components/contact/contact.component';
+import {EducationComponent} from '@app/components/education/education.component';
 
-import {ContactService} from './services/contact/contact.service';
+import {EducationService} from '@app/services/education/education.service';
 
 @NgModule({
     imports: [
@@ -15,17 +14,16 @@ import {ContactService} from './services/contact/contact.service';
         HttpClientModule,
 
         MatIconModule,
-        MatListModule,
     ],
     declarations: [
-        ContactComponent,
+        EducationComponent,
     ],
     exports: [
-        ContactComponent,
+        EducationComponent,
     ],
     providers: [
-        ContactService,
+        EducationService,
     ]
 })
-export class ContactModule {
+export class EducationModule {
 }

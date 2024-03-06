@@ -1,8 +1,8 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {AgePipe} from '../../pipes/age/age.pipe';
+import {HeaderComponent} from '@app/components/header/header.component';
 
-import {HeaderComponent} from './header.component';
+import {AgePipe} from '@app/pipes/age/age.pipe';
 
 describe('Components', () => {
     describe('HeaderComponent', () => {

@@ -1,8 +1,8 @@
 import {NgModule} from '@angular/core';
 
-import {HeaderComponent} from './components/header/header.component';
+import {HeaderComponent} from '@app/components/header/header.component';
 
-import {AgePipe} from './pipes/age/age.pipe';
+import {AgePipe} from '@app/pipes/age/age.pipe';
 
 @NgModule({
     declarations: [

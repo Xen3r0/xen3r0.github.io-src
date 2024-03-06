@@ -1,7 +1,7 @@
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {ComponentFixture, TestBed} from '@angular/core/testing';
 
-import {WorkExperienceComponent} from './work-experience.component';
+import {WorkExperienceComponent} from '@app/components/work-experience/work-experience.component';
 
 describe('Components', () => {
     describe('WorkExperienceComponent', () => {

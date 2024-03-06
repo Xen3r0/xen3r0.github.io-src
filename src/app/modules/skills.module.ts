@@ -7,9 +7,9 @@ import {MatListModule} from '@angular/material/list';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
-import {SkillsComponent} from './components/skills/skills.component';
+import {SkillsComponent} from '@app/components/skills/skills.component';
 
-import {SkillsService} from './services/skills/skills.service';
+import {SkillsService} from '@app/services/skills/skills.service';
 
 @NgModule({
     imports: [

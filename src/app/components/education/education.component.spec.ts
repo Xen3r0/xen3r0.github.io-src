@@ -3,13 +3,13 @@ import {ComponentFixture, TestBed} from '@angular/core/testing';
 
 import {of} from 'rxjs';
 
-import {getEducationMockData} from '../../../../testing/education.testing';
+import {EducationComponent} from '@app/components/education/education.component';
 
-import {EducationItemModel} from '../../models/education-item.model';
+import {EducationItemModel} from '@app/models/education-item.model';
 
-import {EducationService} from '../../services/education/education.service';
+import {EducationService} from '@app/services/education/education.service';
 
-import {EducationComponent} from './education.component';
+import {getEducationMockData} from '@app-testing/education.testing';
 
 describe('Components', () => {
     describe('EducationComponent', () => {

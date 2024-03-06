@@ -1,9 +1,9 @@
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 import {TestBed} from '@angular/core/testing';
 
-import {getContactMockData} from '../../../../testing/contact.testing';
+import {ContactService} from '@app/services/contact/contact.service';
 
-import {ContactService} from './contact.service';
+import {getContactMockData} from '@app-testing/contact.testing';
 
 describe('Services', () => {
     describe('ContactService', () => {

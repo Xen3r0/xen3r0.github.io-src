@@ -1,9 +1,9 @@
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 import {TestBed} from '@angular/core/testing';
 
-import {getEducationMockData} from '../../../../testing/education.testing';
+import {EducationService} from '@app/services/education/education.service';
 
-import {EducationService} from './education.service';
+import {getEducationMockData} from '@app-testing/education.testing';
 
 describe('Services', () => {
     describe('EducationService', () => {

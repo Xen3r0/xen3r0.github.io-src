@@ -2,30 +2,30 @@ import {CommonModule} from '@angular/common';
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 
-import {MatChipsModule} from '@angular/material/chips';
 import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 
-import {HobbiesComponent} from './components/hobbies/hobbies.component';
+import {ContactComponent} from '@app/components/contact/contact.component';
 
-import {HobbiesService} from './services/hobbies/hobbies.service';
+import {ContactService} from '@app/services/contact/contact.service';
 
 @NgModule({
     imports: [
         CommonModule,
         HttpClientModule,
 
-        MatChipsModule,
         MatIconModule,
+        MatListModule,
     ],
     declarations: [
-        HobbiesComponent,
+        ContactComponent,
     ],
     exports: [
-        HobbiesComponent,
+        ContactComponent,
     ],
     providers: [
-        HobbiesService,
+        ContactService,
     ]
 })
-export class HobbiesModule {
+export class ContactModule {
 }

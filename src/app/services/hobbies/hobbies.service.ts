@@ -3,9 +3,9 @@ import {Injectable} from '@angular/core';
 
 import {Observable} from 'rxjs';
 
-import {HobbyItemModel} from '../../models/hobby-item.model';
+import {HobbyItemModel} from '@app/models/hobby-item.model';
 
-import {DataInterface} from '../data.interface';
+import {DataInterface} from '@app/services/data.interface';
 
 @Injectable()
 export class HobbiesService implements DataInterface {

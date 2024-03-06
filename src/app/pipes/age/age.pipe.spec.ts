@@ -1,4 +1,4 @@
-import {AgePipe} from './age.pipe';
+import {AgePipe} from '@app/pipes/age/age.pipe';
 
 describe('Pipes', () => {
     describe('AgePipe', () => {

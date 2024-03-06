@@ -15,6 +15,9 @@
         ],
         "createDefaultProgram": true
       },
+      "plugins": [
+        "simple-import-sort"
+      ],
       "extends": [
         "plugin:@angular-eslint/recommended",
         "plugin:@angular-eslint/template/process-inline-templates"
@@ -34,6 +37,22 @@
             "prefix": "app",
             "style": "camelCase",
             "type": "attribute"
+          }
+        ],
+        "simple-import-sort/imports": [
+          "warn",
+          {
+            "groups": [
+              ["^(@angular\\/(?!material)(?!cdk))"],
+              ["^((@angular/cdk)|(@angular/material)|(rxjs))"],
+              ["^@app/components"],
+              ["^@app/models"],
+              ["^@app/modules"],
+              ["^@app/pipes"],
+              ["^@app/services"],
+              ["^@app-testing"],
+              ["^[.]"]
+            ]
           }
         ]
       }

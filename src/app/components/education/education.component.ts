@@ -1,10 +1,10 @@
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-// Dependencies
+
 import {Observable} from 'rxjs';
-// Models
-import {EducationItemModel} from '../../models/education-item.model';
-// Services
-import {EducationService} from '../../services/education/education.service';
+
+import {EducationItemModel} from '@app/models/education-item.model';
+
+import {EducationService} from '@app/services/education/education.service';
 
 @Component({
     selector: 'app-education',

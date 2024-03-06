@@ -1,18 +1,22 @@
 <div class="box">
     <h2>Compétences</h2>
     <mat-list class="d-print-none">
-        <mat-list-item *ngFor="let item of items$ | async">
-            <h4 matListItemTitle>{{item.title}}</h4>
-            <p matListItemLine>
-                <mat-progress-bar mode="determinate" [value]="item.percent"></mat-progress-bar>
-            </p>
-        </mat-list-item>
+        @for (item of items$ | async; track item) {
+            <mat-list-item>
+                <h4 matListItemTitle>{{ item.title }}</h4>
+                <p matListItemLine>
+                    <mat-progress-bar mode="determinate" [value]="item.percent"></mat-progress-bar>
+                </p>
+            </mat-list-item>
+        }
     </mat-list>
     <ul class="list-group competences d-none d-print-block">
-        <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let item of items$ | async">
-            {{item.title}}
-            <span class="badge badge-primary badge-pill">{{item.percent}} %</span>
-        </li>
+        @for (item of items$ | async; track item) {
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                {{ item.title }}
+                <span class="badge badge-primary badge-pill">{{ item.percent }} %</span>
+            </li>
+        }
     </ul>
 
     <div class="row item-row">

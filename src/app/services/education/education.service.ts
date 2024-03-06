@@ -4,9 +4,9 @@ import {Injectable} from '@angular/core';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 
-import {EducationItemModel} from '../../models/education-item.model';
+import {EducationItemModel} from '@app/models/education-item.model';
 
-import {DataInterface} from '../data.interface';
+import {DataInterface} from '@app/services/data.interface';
 
 @Injectable()
 export class EducationService implements DataInterface {

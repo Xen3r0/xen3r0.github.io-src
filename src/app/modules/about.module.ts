@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 
-import {AboutComponent} from './components/about/about.component';
+import {AboutComponent} from '@app/components/about/about.component';
 
 @NgModule({
     declarations: [

@@ -1,15 +1,15 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 
-import {AboutModule} from './about.module';
+import {AppComponent} from '@app/components/app/app.component';
 
-import {AppComponent} from './components/app/app.component';
-import {ContactModule} from './contact.module';
-import {EducationModule} from './education.module';
-import {HeaderModule} from './header.module';
-import {HobbiesModule} from './hobbies.module';
-import {SkillsModule} from './skills.module';
-import {WorkExperienceModule} from './work-experience.module';
+import {AboutModule} from '@app/modules/about.module';
+import {ContactModule} from '@app/modules/contact.module';
+import {EducationModule} from '@app/modules/education.module';
+import {HeaderModule} from '@app/modules/header.module';
+import {HobbiesModule} from '@app/modules/hobbies.module';
+import {SkillsModule} from '@app/modules/skills.module';
+import {WorkExperienceModule} from '@app/modules/work-experience.module';
 
 @NgModule({
     imports: [

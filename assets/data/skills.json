@@ -5,23 +5,23 @@
   },
   {
     "percent": 100,
-    "title": "JS / AngularJS / jQuery"
+    "title": "TypeScript / Angular 17"
   },
   {
     "percent": 100,
-    "title": "TypeScript / Angular 16"
+    "title": "JS / AngularJS / jQuery"
   },
   {
     "percent": 100,
     "title": "PHP 8 / Symfony 6"
   },
   {
-    "percent": 80,
-    "title": "CSS / LESS / SASS"
+    "percent": 90,
+    "title": "Jenkins CI / GitLab CI"
   },
   {
-    "percent": 70,
-    "title": "Jenkins CI"
+    "percent": 80,
+    "title": "CSS / LESS / SASS"
   },
   {
     "percent": 30,

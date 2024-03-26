@@ -3,42 +3,30 @@
     "href": "mailto:manuel.santisteban@orange.fr",
     "iconSet": "fa-regular",
     "icon": "fa-envelope",
-    "title": "manuel.santisteban@orange.fr"
+    "title": "Email"
   },
   {
     "href": "https://github.com/xen3r0",
     "iconSet": "fa-brands",
     "icon": "fa-github",
-    "title": "https://github.com/xen3r0"
+    "title": "GitHub : @xen3r0"
   },
   {
     "href": "https://twitter.com/xen3r0",
     "iconSet": "fa-brands",
     "icon": "fa-twitter",
-    "title": "@xen3r0"
+    "title": "X : @xen3r0"
   },
   {
     "href": "https://www.linkedin.com/in/santisteban-manuel/",
     "iconSet": "fa-brands",
     "icon": "fa-linkedin",
-    "title": "@santisteban-manuel"
+    "title": "Linkedin : @santisteban-manuel"
   },
   {
     "href": "https://goo.gl/maps/TV564hqVnYb1dq4bA",
     "iconSet": "fa-solid",
     "icon": "fa-location-dot",
     "title": "Montélimar, France"
-  },
-  {
-    "href": "https://github.com/xen3r0/xen3r0.github.io-src",
-    "iconSet": "fa-brands",
-    "icon": "fa-github",
-    "title": "https://github.com/xen3r0/xen3r0.github.io-src"
-  },
-  {
-    "href": "https://github.com/xen3r0/xen3r0.github.io",
-    "iconSet": "fa-brands",
-    "icon": "fa-github",
-    "title": "https://github.com/xen3r0/xen3r0.github.io"
   }
 ]

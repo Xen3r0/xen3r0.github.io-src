@@ -1,7 +1,6 @@
+import {AsyncPipe} from '@angular/common';
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {DomSanitizer} from '@angular/platform-browser';
 
-import {MatIconRegistry} from '@angular/material/icon';
 import {Observable} from 'rxjs';
 
 import {ContactItemModel} from '@app/models/contact-item.model';
@@ -12,20 +11,18 @@ import {ContactService} from '@app/services/contact/contact.service';
     selector: 'app-contact',
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.scss'],
-    changeDetection: ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [AsyncPipe],
+    providers: [ContactService]
 })
 export class ContactComponent implements OnInit {
     items$: Observable<Array<ContactItemModel>>;
 
-    constructor(private contactService: ContactService,
-                private iconRegistry: MatIconRegistry,
-                private sanitizer: DomSanitizer) {
-        ['github', 'twitter', 'linkedin'].forEach((value: string) => {
-            this.iconRegistry.addSvgIcon(value, this.sanitizer.bypassSecurityTrustResourceUrl('assets/icons/' + value + '.svg'));
-        });
+    constructor(private contactService: ContactService) {
     }
 
     ngOnInit(): void {
-        this.items$ = this.contactService.getAll();
+        this.items$ = this.contactService.fetch();
     }
 }

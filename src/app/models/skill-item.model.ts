@@ -1,4 +1,10 @@
+export interface SkillModel {
+    programming: Array<SkillItemModel>;
+    tools: Array<SkillItemModel>;
+}
+
 export interface SkillItemModel {
-    percent: number;
+    iconSet: string;
+    icon: string;
     title: string;
 }

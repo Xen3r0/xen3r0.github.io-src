@@ -32,7 +32,7 @@ describe('Components', () => {
 
         beforeEach(async () => {
             await TestBed.configureTestingModule({
-                declarations: [EducationComponent],
+                imports: [EducationComponent],
                 providers: [
                     {provide: EducationService, useValue: educationServiceStub},
                 ],

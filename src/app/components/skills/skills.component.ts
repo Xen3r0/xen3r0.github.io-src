@@ -1,23 +1,27 @@
+import {AsyncPipe, NgIf} from '@angular/common';
 import {Component, OnInit} from '@angular/core';
 
 import {Observable} from 'rxjs';
 
-import {SkillItemModel} from '@app/models/skill-item.model';
+import {SkillModel} from '@app/models/skill-item.model';
 
-import {SkillsService} from '@app/services/skills/skills.service';
+import {SkillsFetcher} from '@app/services/skills/skills-fetcher.service';
 
 @Component({
     selector: 'app-skills',
     templateUrl: './skills.component.html',
-    styleUrls: ['./skills.component.scss']
+    styleUrls: ['./skills.component.scss'],
+    standalone: true,
+    imports: [NgIf, AsyncPipe],
+    providers: [SkillsFetcher]
 })
 export class SkillsComponent implements OnInit {
-    items$: Observable<Array<SkillItemModel>>;
+    skills$: Observable<SkillModel>;
 
-    constructor(private skillsService: SkillsService) {
+    constructor(private skillsService: SkillsFetcher) {
     }
 
     ngOnInit(): void {
-        this.items$ = this.skillsService.getAll();
+        this.skills$ = this.skillsService.fetch();
     }
 }

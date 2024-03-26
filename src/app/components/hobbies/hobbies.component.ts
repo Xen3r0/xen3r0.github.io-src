@@ -1,23 +1,10 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-
-import {Observable} from 'rxjs';
-
-import {HobbyItemModel} from '@app/models/hobby-item.model';
-
-import {HobbiesService} from '@app/services/hobbies/hobbies.service';
+import {ChangeDetectionStrategy, Component} from '@angular/core';
 
 @Component({
     selector: 'app-hobbies',
     templateUrl: './hobbies.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true
 })
-export class HobbiesComponent implements OnInit {
-    items$: Observable<Array<HobbyItemModel>>;
-
-    constructor(private hobbiesService: HobbiesService) {
-    }
-
-    ngOnInit(): void {
-        this.items$ = this.hobbiesService.getAll();
-    }
+export class HobbiesComponent {
 }

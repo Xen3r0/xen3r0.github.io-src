@@ -1,12 +1,5 @@
-<div class="box clearfix">
-    <h2>Contact / Liens</h2>
-
-    <mat-nav-list>
-        @for (item of items$ | async; track item) {
-            <a mat-list-item [href]="item.href" target="_blank">
-                <mat-icon matListItemIcon [fontSet]="item.iconSet" [fontIcon]="item.icon"></mat-icon>
-                <h4 matListItemTitle>{{ item.title }}</h4>
-            </a>
-        }
-    </mat-nav-list>
+<div class="social-icons">
+    @for (item of items$ | async; track item) {
+        <a class="social-icon" [href]="item.href"><i class="{{item.iconSet}} {{item.icon}}"></i></a>
+    }
 </div>

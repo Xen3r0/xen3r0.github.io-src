@@ -32,7 +32,7 @@ describe('Components', () => {
 
         beforeEach(async () => {
             await TestBed.configureTestingModule({
-                declarations: [ContactComponent],
+                imports: [ContactComponent],
                 providers: [
                     {provide: ContactService, useValue: contactServiceStub},
                 ],

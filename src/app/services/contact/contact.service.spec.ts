@@ -22,7 +22,7 @@ describe('Services', () => {
         it('should be get all items', () => {
             const service: ContactService = TestBed.inject(ContactService);
             const httpTestingController: HttpTestingController = TestBed.inject(HttpTestingController);
-            const request = service.getAll();
+            const request = service.fetch();
             const testData = getContactMockData();
 
             request.subscribe((data) => {

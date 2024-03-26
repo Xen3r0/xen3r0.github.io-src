@@ -1,3 +1,4 @@
+import {AsyncPipe} from '@angular/common';
 import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
 
 import {Observable} from 'rxjs';
@@ -9,7 +10,10 @@ import {EducationService} from '@app/services/education/education.service';
 @Component({
     selector: 'app-education',
     templateUrl: './education.component.html',
-    changeDetection: ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: true,
+    imports: [AsyncPipe],
+    providers: [EducationService]
 })
 export class EducationComponent implements OnInit {
     items$: Observable<Array<EducationItemModel>>;
@@ -18,6 +22,6 @@ export class EducationComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.items$ = this.educationService.getAll();
+        this.items$ = this.educationService.fetch();
     }
 }

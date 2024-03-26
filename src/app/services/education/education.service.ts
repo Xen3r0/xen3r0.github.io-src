@@ -6,14 +6,14 @@ import {map} from 'rxjs/operators';
 
 import {EducationItemModel} from '@app/models/education-item.model';
 
-import {DataInterface} from '@app/services/data.interface';
+import {FetcherInterface} from '@app/services/fetcher';
 
-@Injectable()
-export class EducationService implements DataInterface {
+@Injectable({providedIn: 'root'})
+export class EducationService implements FetcherInterface {
     constructor(private httpClient: HttpClient) {
     }
 
-    getAll(): Observable<Array<EducationItemModel>> {
+    fetch(): Observable<Array<EducationItemModel>> {
         return this.httpClient.get<Array<EducationItemModel>>('assets/data/education.json').pipe(
             map((items: Array<EducationItemModel>) => {
                 items.sort(this.orderItems);

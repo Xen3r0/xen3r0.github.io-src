@@ -7,7 +7,7 @@ import {SkillsComponent} from '@app/components/skills/skills.component';
 
 import {SkillItemModel} from '@app/models/skill-item.model';
 
-import {SkillsService} from '@app/services/skills/skills.service';
+import {SkillsFetcher} from '@app/services/skills/skills-fetcher.service';
 
 import {getSkillsMockData} from '@app-testing/skills.testing';
 
@@ -16,7 +16,7 @@ describe('Components', () => {
         let component: SkillsComponent;
         let fixture: ComponentFixture<SkillsComponent>;
 
-        let skillsServiceStub: SkillsService;
+        let skillsFetcherStub: SkillsFetcher;
 
         let mockData: Array<SkillItemModel>;
 
@@ -25,16 +25,16 @@ describe('Components', () => {
         });
 
         beforeEach(() => {
-            skillsServiceStub = {
+            skillsFetcherStub = {
                 getAll: jasmine.createSpy('getAll').and.returnValue(of(mockData))
             } as any;
         });
 
         beforeEach(async () => {
             await TestBed.configureTestingModule({
-                declarations: [SkillsComponent],
+                imports: [SkillsComponent],
                 providers: [
-                    {provide: SkillsService, useValue: skillsServiceStub},
+                    {provide: SkillsFetcher, useValue: skillsFetcherStub},
                 ],
                 schemas: [NO_ERRORS_SCHEMA]
             }).compileComponents();

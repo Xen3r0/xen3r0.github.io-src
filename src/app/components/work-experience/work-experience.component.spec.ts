@@ -10,7 +10,7 @@ describe('Components', () => {
 
         beforeEach(async () => {
             await TestBed.configureTestingModule({
-                declarations: [WorkExperienceComponent],
+                imports: [WorkExperienceComponent],
                 schemas: [NO_ERRORS_SCHEMA]
             }).compileComponents();
 

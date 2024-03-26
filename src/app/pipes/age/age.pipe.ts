@@ -2,7 +2,7 @@ import {Pipe, PipeTransform} from '@angular/core';
 
 @Pipe({
     name: 'appAge',
-    pure: true
+    standalone: true
 })
 export class AgePipe implements PipeTransform {
     transform(value: Date, args?: any): string {
@@ -10,9 +10,14 @@ export class AgePipe implements PipeTransform {
     }
 
     private calculateAge(value: Date): number {
-        const diff = (Date.now() - value.getTime());
-        const age = new Date(diff);
+        const today = new Date();
+        const monthDiff = today.getMonth() - value.getMonth();
+        let age = today.getFullYear() - value.getFullYear();
 
-        return Math.abs(age.getUTCFullYear() - 1970);
+        if (0 > monthDiff || (0 === monthDiff && today.getDate() < value.getDate())) {
+            age--;
+        }
+
+        return age;
     }
 }

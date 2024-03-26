@@ -8,9 +8,9 @@ describe('Components', () => {
         let component: AppComponent;
         let fixture: ComponentFixture<AppComponent>;
 
-        beforeEach(async() => {
+        beforeEach(async () => {
             await TestBed.configureTestingModule({
-                declarations: [AppComponent],
+                imports: [AppComponent],
                 schemas: [NO_ERRORS_SCHEMA]
             }).compileComponents();
 

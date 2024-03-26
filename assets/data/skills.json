@@ -1,30 +1,66 @@
-[
-  {
-    "percent": 100,
-    "title": "HTML"
-  },
-  {
-    "percent": 100,
-    "title": "TypeScript / Angular 17"
-  },
-  {
-    "percent": 100,
-    "title": "JS / AngularJS / jQuery"
-  },
-  {
-    "percent": 100,
-    "title": "PHP 8 / Symfony 6"
-  },
-  {
-    "percent": 90,
-    "title": "Jenkins CI / GitLab CI"
-  },
-  {
-    "percent": 80,
-    "title": "CSS / LESS / SASS"
-  },
-  {
-    "percent": 30,
-    "title": "C++"
-  }
-]
+{
+  "programming": [
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-html5",
+      "title": "HTML 5"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-css3-alt",
+      "title": "CSS 3"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-js-square",
+      "title": "Javascript & TypeScript"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-php",
+      "title": "PHP 8"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-symfony",
+      "title": "Symfony 7"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-angular",
+      "title": "Angular 17"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-sass",
+      "title": "SASS"
+    }
+  ],
+  "tools": [
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-npm",
+      "title": "NPM"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-gitlab",
+      "title": "GitLab"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-github",
+      "title": "GitHub"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-jenkins",
+      "title": "Jenkins"
+    },
+    {
+      "iconSet": "fa-brands",
+      "icon": "fa-jira",
+      "title": "Jira"
+    }
+  ]
+}

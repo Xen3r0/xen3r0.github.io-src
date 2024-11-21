@@ -8,7 +8,6 @@ import {AgePipe} from '@app/pipes/age/age.pipe';
     selector: 'app-about',
     templateUrl: './about.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [ContactComponent, AgePipe]
 })
 export class AboutComponent {

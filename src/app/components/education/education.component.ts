@@ -11,7 +11,6 @@ import {EducationService} from '@app/services/education/education.service';
     selector: 'app-education',
     templateUrl: './education.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [AsyncPipe],
     providers: [EducationService]
 })

@@ -11,7 +11,6 @@ import {ScrollSpy} from 'bootstrap';
     selector: 'app-root',
     templateUrl: './app.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [
         AboutComponent,
         EducationComponent,

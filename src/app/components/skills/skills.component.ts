@@ -11,7 +11,6 @@ import {SkillsFetcher} from '@app/services/skills/skills-fetcher.service';
     selector: 'app-skills',
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss'],
-    standalone: true,
     imports: [NgIf, AsyncPipe],
     providers: [SkillsFetcher]
 })

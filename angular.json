@@ -18,7 +18,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "dist/xen3r0"
+              "base": "dist/xen3r0",
+              "browser": "browser"
             },
             "index": "src/index.html",
             "polyfills": [
@@ -119,6 +120,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
+            "buildTarget": "xen3r0:build:production",
             "baseHref": "https://xen3r0.github.io/",
             "name": "Manuel Santisteban",
             "email": "xen3r0@gmail.com"

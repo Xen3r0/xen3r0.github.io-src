@@ -12,7 +12,6 @@ import {ContactService} from '@app/services/contact/contact.service';
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: true,
     imports: [
         AsyncPipe,
     ],

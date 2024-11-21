@@ -14,13 +14,12 @@ export class EducationService implements FetcherInterface {
     }
 
     fetch(): Observable<Array<EducationItemModel>> {
-        return this.httpClient.get<Array<EducationItemModel>>('assets/data/education.json').pipe(
-            map((items: Array<EducationItemModel>) => {
+        return this.httpClient.get<Array<EducationItemModel>>('assets/data/education.json')
+            .pipe(map((items: Array<EducationItemModel>) => {
                 items.sort(this.orderItems);
 
                 return items;
-            })
-        );
+            }));
     }
 
     private orderItems(a: EducationItemModel, b: EducationItemModel): number {

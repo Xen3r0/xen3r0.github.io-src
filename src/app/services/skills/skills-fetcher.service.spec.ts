@@ -1,4 +1,5 @@
-import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
+import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
+import {HttpTestingController, provideHttpClientTesting} from '@angular/common/http/testing';
 import {TestBed} from '@angular/core/testing';
 
 import {SkillsFetcher} from '@app/services/skills/skills-fetcher.service';
@@ -9,8 +10,11 @@ describe('Services', () => {
     describe('SkillsFetcher', () => {
         beforeEach(() => {
             TestBed.configureTestingModule({
-                imports: [HttpClientTestingModule],
-                providers: [SkillsFetcher]
+                providers: [
+                    SkillsFetcher,
+                    provideHttpClient(withInterceptorsFromDi()),
+                    provideHttpClientTesting()
+                ]
             });
         });
 

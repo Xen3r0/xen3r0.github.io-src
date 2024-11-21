@@ -1,4 +1,4 @@
-import {HttpClientModule} from '@angular/common/http';
+import {provideHttpClient, withInterceptorsFromDi} from '@angular/common/http';
 import {enableProdMode, importProvidersFrom} from '@angular/core';
 import {bootstrapApplication, BrowserModule} from '@angular/platform-browser';
 
@@ -15,7 +15,7 @@ bootstrapApplication(
     {
         providers: [
             importProvidersFrom(BrowserModule),
-            importProvidersFrom(HttpClientModule),
+            provideHttpClient(withInterceptorsFromDi()),
         ]
     }
 ).catch(err => console.error(err));

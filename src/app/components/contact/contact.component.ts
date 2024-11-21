@@ -13,7 +13,9 @@ import {ContactService} from '@app/services/contact/contact.service';
     styleUrls: ['./contact.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
     standalone: true,
-    imports: [AsyncPipe],
+    imports: [
+        AsyncPipe,
+    ],
     providers: [ContactService]
 })
 export class ContactComponent implements OnInit {

@@ -103,7 +103,7 @@ ${e.map((n,r)=>`${r+1}) ${n.toString()}`).join(`
             `),E(32,"div",4),f(33,`
                 `),E(34,"h3",5),f(35,"Team leader WinLassie classique"),v(),f(36,`
                 `),E(37,"div",6),f(38,"Gamma Software"),v(),f(39,`
-                `),E(40,"p"),f(41,"Team leader historique \xE9crit en WinDev afin d'am\xE9liorer techniquement la produit et de commencer \xE0 int\xE9grer les bonnes pratiques."),v(),f(42,`
+                `),E(40,"p"),f(41,"Team leader historique \xE9crit en WinDev afin d'am\xE9liorer techniquement le produit et de commencer \xE0 int\xE9grer les bonnes pratiques."),v(),f(42,`
             `),v(),f(43,`
             `),E(44,"div",7)(45,"span",8),f(46,"Mars 2014 - Janvier 2016"),v()(),f(47,`
         `),v(),f(48,`

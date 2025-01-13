@@ -6,12 +6,16 @@ import {Observable} from 'rxjs';
 import {EducationItemModel} from '@app/models/education-item.model';
 
 import {EducationService} from '@app/services/education/education.service';
+import {TranslateModule} from '@ngx-translate/core';
 
 @Component({
     selector: 'app-education',
     templateUrl: './education.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush,
-    imports: [AsyncPipe],
+    imports: [
+        AsyncPipe,
+        TranslateModule,
+    ],
     providers: [EducationService]
 })
 export class EducationComponent implements OnInit {

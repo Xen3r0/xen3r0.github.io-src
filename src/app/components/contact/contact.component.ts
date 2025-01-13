@@ -6,6 +6,7 @@ import {Observable} from 'rxjs';
 import {ContactItemModel} from '@app/models/contact-item.model';
 
 import {ContactService} from '@app/services/contact/contact.service';
+import {TranslateModule} from '@ngx-translate/core';
 
 @Component({
     selector: 'app-contact',
@@ -14,6 +15,7 @@ import {ContactService} from '@app/services/contact/contact.service';
     changeDetection: ChangeDetectionStrategy.OnPush,
     imports: [
         AsyncPipe,
+        TranslateModule,
     ],
     providers: [ContactService]
 })

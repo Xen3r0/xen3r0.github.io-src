@@ -2,7 +2,7 @@
     <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Manuel Santisteban</span>
         <span class="d-none d-lg-block">
-            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="...">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="/img/profile.jpg" alt="...">
         </span>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,12 +10,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">A propos de moi</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Expériences</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Formations</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Compétences</a></li>
-            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Loisirs</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about" translate>À propos de moi</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience" translate>Expériences</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education" translate>Formations</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills" translate>Compétences</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests" translate>Loisirs</a></li>
         </ul>
+    </div>
+    <div class="btn-group">
+        <button type="button" class="btn btn-secondary" (click)="changeLocale('en')">🇺🇸</button>
+        <button type="button" class="btn btn-secondary" (click)="changeLocale('fr')">🇫🇷</button>
     </div>
 </nav>
 

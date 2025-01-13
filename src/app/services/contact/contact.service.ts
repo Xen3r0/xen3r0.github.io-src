@@ -13,6 +13,6 @@ export class ContactService implements FetcherInterface {
     }
 
     fetch(): Observable<Array<ContactItemModel>> {
-        return this.httpClient.get<Array<ContactItemModel>>('assets/data/contact.json');
+        return this.httpClient.get<Array<ContactItemModel>>('/data/contact.json');
     }
 }

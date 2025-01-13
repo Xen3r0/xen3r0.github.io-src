@@ -14,7 +14,7 @@ export class EducationService implements FetcherInterface {
     }
 
     fetch(): Observable<Array<EducationItemModel>> {
-        return this.httpClient.get<Array<EducationItemModel>>('assets/data/education.json')
+        return this.httpClient.get<Array<EducationItemModel>>('/data/education.json')
             .pipe(map((items: Array<EducationItemModel>) => {
                 items.sort(this.orderItems);
 

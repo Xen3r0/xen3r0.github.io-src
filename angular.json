@@ -29,8 +29,11 @@
             "aot": true,
             "sourceMap": true,
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              },
+              "src/favicon.ico"
             ],
             "styles": [
               "src/scss/styles.scss"
@@ -87,8 +90,11 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "public"
+              },
+              "src/favicon.ico"
             ],
             "styles": [
               "src/scss/styles.scss"

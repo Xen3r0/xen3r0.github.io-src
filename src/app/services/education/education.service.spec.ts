@@ -33,7 +33,7 @@ describe('Services', () => {
                 expect(data).toEqual(testData);
             });
 
-            const req = httpTestingController.expectOne('assets/data/education.json');
+            const req = httpTestingController.expectOne('/data/education.json');
             expect(req.request.method).toEqual('GET');
 
             req.flush(testData);

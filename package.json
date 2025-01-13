@@ -7,7 +7,9 @@
     "build": "ng build --configuration=production",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "i18n:init": "ngx-translate-extract --input ./src --output ./public/i18n/template.json --key-as-default-value --replace --format json",
+    "i18n:extract": "ngx-translate-extract --input ./src --output ./public/i18n/{en,fr}.json --clean --format json"
   },
   "private": true,
   "resolutions": {
@@ -23,6 +25,8 @@
     "@fontsource/muli": "^4.1.0",
     "@fontsource/saira-extra-condensed": "^5.0.19",
     "@fortawesome/fontawesome-free": "^6.5.1",
+    "@ngx-translate/core": "^16.0.4",
+    "@ngx-translate/http-loader": "^16.0.1",
     "bootstrap": "^5.3.3",
     "rxjs": "^6.6.7",
     "tslib": "^1.9.0",
@@ -40,6 +44,7 @@
     "@types/node": "^12.11.7",
     "@typescript-eslint/eslint-plugin": "5.62.0",
     "@typescript-eslint/parser": "5.62.0",
+    "@vendure/ngx-translate-extract": "^9.4.0",
     "angular-cli-ghpages": "^2.0.3",
     "eslint": "^8.44.0",
     "eslint-plugin-simple-import-sort": "^12.0.0",

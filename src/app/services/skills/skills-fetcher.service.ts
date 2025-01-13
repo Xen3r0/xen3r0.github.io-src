@@ -13,6 +13,6 @@ export class SkillsFetcher implements FetcherInterface {
     }
 
     fetch(): Observable<SkillModel> {
-        return this.httpClient.get<SkillModel>('assets/data/skills.json');
+        return this.httpClient.get<SkillModel>('/data/skills.json');
     }
 }

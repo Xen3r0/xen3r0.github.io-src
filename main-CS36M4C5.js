@@ -16,7 +16,7 @@ ${e.map((n,r)=>`${r+1}) ${n.toString()}`).join(`
         `),y(4,"h1",2),d(5,"Manuel "),y(6,"span",3),d(7,"Santisteban"),g()(),d(8,`
         `),y(9,"div",4),d(10),kt(11,"appAge"),g(),d(12,`
         `),y(13,"p",5),d(14,`
-            `),y(15,"span",6),d(16,"Team leader enthousiaste et d\xE9vou\xE9, je suis passionn\xE9 par le d\xE9veloppement et les nouvelles technologies."),g(),d(17,`
+            `),y(15,"span",6),d(16,"Je suis quelqu'un d'enthousiaste et de d\xE9vou\xE9, je suis passionn\xE9 par le d\xE9veloppement et les nouvelles technologies."),g(),d(17,`
             `),y(18,"span",6),d(19,"Fort de 14 ann\xE9es d'exp\xE9rience dans le domaine du d\xE9veloppement, j'ai eu le privil\xE8ge de diriger une \xE9quipe de d\xE9veloppeurs talentueux et passionn\xE9s."),g(),d(20,`
             `),y(21,"span",6),d(22,"Ma capacit\xE9 \xE0 cultiver un environnement de travail collaboratif et inspirant a permis \xE0 mon \xE9quipe de r\xE9aliser des projets innovants et de surpasser les attentes."),g(),d(23,`
         `),g(),d(24,`
@@ -31,7 +31,7 @@ ${e.map((n,r)=>`${r+1}) ${n.toString()}`).join(`
         `),H(37,"app-contact"),d(38,`
     `),g(),d(39,`
 `),g(),d(40,`
-`)),o&2&&(se(10),ms("Team leader \xB7 ",Ft(11,1,i.birthday)," ans"))},dependencies:[rg,og,De,Pe],encapsulation:2,changeDetection:0});let t=e;return t})();var ks=(()=>{let e=class e{constructor(r){this.httpClient=r}fetch(){return this.httpClient.get("/data/education.json").pipe(te(r=>(r.sort(this.orderItems),r)))}orderItems(r,o){return r.year>o.year?-1:r.year<o.year?1:0}};e.\u0275fac=function(o){return new(o||e)(_(Qe))},e.\u0275prov=O({token:e,factory:e.\u0275fac,providedIn:"root"});let t=e;return t})();function iw(t,e){if(t&1&&(d(0,`
+`)),o&2&&(se(10),ms("Team leader / Full stack developer \xB7 ",Ft(11,1,i.birthday)," ans"))},dependencies:[rg,og,De,Pe],encapsulation:2,changeDetection:0});let t=e;return t})();var ks=(()=>{let e=class e{constructor(r){this.httpClient=r}fetch(){return this.httpClient.get("/data/education.json").pipe(te(r=>(r.sort(this.orderItems),r)))}orderItems(r,o){return r.year>o.year?-1:r.year<o.year?1:0}};e.\u0275fac=function(o){return new(o||e)(_(Qe))},e.\u0275prov=O({token:e,factory:e.\u0275fac,providedIn:"root"});let t=e;return t})();function iw(t,e){if(t&1&&(d(0,`
             `),y(1,"div",3),d(2,`
                 `),y(3,"div",4),d(4,`
                     `),y(5,"h3",5),d(6),g(),d(7,`
